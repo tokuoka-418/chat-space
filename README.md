@@ -7,7 +7,7 @@
 |name|string|null: false|
 
 ### Association
-- has_many :group  through:  :groups_users
+- has_many :group
 - has_many :comments
 
 
@@ -16,12 +16,13 @@
 
  |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|groupname|string|null: false|
+|users_id|integer|null: false, foreign_key: true|
 
 ### Association
+- belong_to : users
 - has_many :comments
 - has_many  :users,  through:  :groups_users
-- has_many  :group  through:  :groups_users
 
 
 
@@ -30,15 +31,12 @@
 
  |Column|Type|Options|
 |------|----|-------|
-|text|text|
-|imege|binary|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
-
+|text|text|null: false, foreign_key: true|
+|imege|binary|null: false, foreign_key: true|
 
 ### Association
-- belong_to : user
-- belong_to :comment
+- belong_to : users
+- belong_to :comments
 
 
 
@@ -47,8 +45,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references|null: false, foreign_key: true|
-|group_id|references|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
