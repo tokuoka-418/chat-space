@@ -38,7 +38,7 @@
 
 ### Association
 - belong_to : user
-- belong_to : comment
+- belong_to :comment
 
 
 
