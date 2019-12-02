@@ -29,12 +29,12 @@
 
 
 
-## commntesテーブル
+## commentsテーブル
 
  |Column|Type|Options|
 |------|----|-------|
 |text|text|
-|imege|binary|
+|imege|text|
 |user_id|references|null: false, foreign_key: true|
 |group_id|references|null: false, foreign_key: true|
 
