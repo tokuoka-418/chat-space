@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+.side-bar {
+  width: 300px;
+  height: 100vh;
+  float: left; 
+  &__user-name {
+    background-color: #253141;
+    height: 100px;
+    padding: 0 20px;
+  }
+ 
+
+    
+  
+  &__box {
+    height: 100px;
+    display: flex;
+    align-items:center;
+    color: white;
+    justify-content: space-between;
+    line-height: 100px;
+    font-weight: bold;
+  }
+
+  &__menu {
+    display: flex;
+    letter-spacing: 5px;
+  }
+  &__menu__icon {
+    color: #ffffff;
+  }
+  &__menu__icon-name{
+    color: #ffffff;
+  }
+  &__gruop {
+    width: 300px;
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 20px 20px 0;
+  }
+  &__gruop__list__name {
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 5px;
+
+
+  }
+  &__gruop__list__name-massage {
+    font-size: 11px;
+    color: #ffffff;
+    margin-bottom: 40px;
+
+  }
+  
+
+
+    }
+ 
+  
+   
+
+.chat-main {
+  width: calc(100vw - 300px);
+  float: left;
+  &__grups {
+    height: 100px;
+    background-color: #ffffff;
+    padding: 0 40px;
+    overflow: scroll;
+  }
+  &__grups__edit {
+    display: flex;
+    justify-content: space-between;
+
+
+  }
+  &__grups__edit-space {
+    margin-top: 35px;
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 15px;
+  
+  }
+  &__grups__edit-box {
+    padding: 0 20px;
+    border: solid 1px #66ffff;
+    margin-top: 28px;
+    height: 40px;
+    line-height: 40px;
+  }
+  &__grups__menber {
+    display: flex;
+    color: #999999;
+    font-size: 12px;
+  }
+
+
+
+  
+  
+
+
+  &__messages-list {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+  }
+
+
+  &__messages-form {
+    height: 90px;
+    background-color: #d2d2d2;
+
+  }
+}
+  
+
+
+
+
+
+
+
+
+
