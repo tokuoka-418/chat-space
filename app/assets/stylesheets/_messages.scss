@@ -105,6 +105,28 @@
   &__messages-list {
     height: calc(100vh - 190px);
     background-color: #fafafa;
+    padding: 40px;
+    overflow: scroll;
+  }
+  &__messages-list__text {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 12px;
+  }
+  &__messages-list__text-name {
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__messages-list__text-time {
+    color: #999999;
+    font-size: 12px;
+    margin-left: 10px;
+  
+  }
+  &__messages-list__message-coment {
+    color: #434A54;
+    font-size: 14px;
   }
 
 
