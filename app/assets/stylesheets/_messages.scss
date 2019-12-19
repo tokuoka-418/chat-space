@@ -30,9 +30,11 @@
   }
   &__menu__icon {
     color: #ffffff;
+    text-decoration: none;
   }
   &__menu__icon-name{
     color: #ffffff;
+    text-decoration: none;
   }
   &__gruop {
     width: 300px;
@@ -51,6 +53,7 @@
     font-size: 11px;
     color: #ffffff;
     margin-bottom: 40px;
+    text-decoration: none;
 
   }
   
@@ -89,6 +92,7 @@
     margin-top: 28px;
     height: 40px;
     line-height: 40px;
+    text-decoration: none;
   }
   &__grups__menber {
     display: flex;
@@ -130,14 +134,48 @@
   }
 
 
-  &__messages-form {
+  &__messages-forms {
     height: 90px;
     background-color: #d2d2d2;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__messages-forms__box {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: #fafafa;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &__messages-forms__box-message {
+    color: #999999;
+  }
+  &__messages-forms__send {
+    border: solid 1px #66ffff;
+    margin-left: 15px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    background-color: #66ffff
+  }
+  &__messages-forms__send-num {
+    color: #ffffff;
+    text-decoration: none;
+  }
 
+  &__messages-forms__box-icon__imege {
+    text-decoration: none;
+    font-size: 1.3rem;
+    input{
+      display: none;
+    }
   }
 }
   
-
 
 
 

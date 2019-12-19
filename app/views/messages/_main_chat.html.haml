@@ -21,4 +21,22 @@
     .chat-main__messages-list__message
     %p.chat-main__messages-list__message-coment
       こんにちは
-  .chat-main__messages-formss
+    .chat-main__messages-list__text
+      %p.chat-main__messages-list__text-name
+        tokuoka
+      %p.chat-main__messages-list__text-time
+        2019/12/20 (sun)
+    .chat-main__messages-list__message
+    %p.chat-main__messages-list__message-coment
+      こんばんは
+  .chat-main__messages-forms
+    %div.chat-main__messages-forms__box
+      %p.chat-main__messages-forms__box-message
+        tyep a message
+      .chat-main__messages-forms__box-icon
+        %label{class: "chat-main__messages-forms__box-icon__imege"}
+          = icon('fas', 'image')
+          %input{type: "file"}
+    .chat-main__messages-forms__send
+      = link_to '#', class:"chat-main__messages-forms__send-num" do
+        Send
