@@ -7,10 +7,6 @@
     height: 100px;
     padding: 0 20px;
   }
- 
-
-    
-  
   &__box {
     height: 100px;
     display: flex;
@@ -20,41 +16,33 @@
     line-height: 100px;
     font-weight: bold;
   }
-
   &__menu {
     display: flex;
     letter-spacing: 5px;
+    &__icon {
+      color: #ffffff;
+      text-decoration: none;
   }
-  &__menu__icon {
-    color: #ffffff;
-    text-decoration: none;
+    &__icon-name{
+      color: #ffffff;
+      text-decoration: none;
   }
-  &__menu__icon-name{
-    color: #ffffff;
-    text-decoration: none;
-  }
-  &__gruop {
+}
+  &__group {
     width: 300px;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
-  }
-  &__gruop__list__name {
-    font-size: 15px;
-    color: #ffffff;
-    margin-bottom: 5px;
-
-
-  }
-  &__gruop__list__name-massage {
-    font-size: 11px;
-    color: #ffffff;
-    margin-bottom: 40px;
-    text-decoration: none;
-
-  }
-  
-
-
+    &__list__name {
+      font-size: 15px;
+      color: #ffffff;
+      margin-bottom: 5px;
     }
- 
+    &__list__name-massage {
+      font-size: 11px;
+      color: #ffffff;
+      margin-bottom: 40px;
+      text-decoration: none;
+    }
+  }
+}

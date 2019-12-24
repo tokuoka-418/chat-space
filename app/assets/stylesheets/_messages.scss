@@ -10,10 +10,6 @@
     height: 100px;
     padding: 0 20px;
   }
- 
-
-    
-  
   &__box {
     height: 100px;
     display: flex;
@@ -23,70 +19,56 @@
     line-height: 100px;
     font-weight: bold;
   }
-
   &__menu {
     display: flex;
     letter-spacing: 5px;
+    &__icon {
+      color: #ffffff;
+      text-decoration: none;
   }
-  &__menu__icon {
-    color: #ffffff;
-    text-decoration: none;
+    &__icon-name{
+      color: #ffffff;
+      text-decoration: none;
   }
-  &__menu__icon-name{
-    color: #ffffff;
-    text-decoration: none;
-  }
-  &__gruop {
+}
+  &__group {
     width: 300px;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
-  }
-  &__gruop__list__name {
-    font-size: 15px;
-    color: #ffffff;
-    margin-bottom: 5px;
-
-
-  }
-  &__gruop__list__name-massage {
-    font-size: 11px;
-    color: #ffffff;
-    margin-bottom: 40px;
-    text-decoration: none;
-
-  }
-  
-
-
+    &__list__name {
+      font-size: 15px;
+      color: #ffffff;
+      margin-bottom: 5px;
     }
- 
-  
-   
+    &__list__name-massage {
+      font-size: 11px;
+      color: #ffffff;
+      margin-bottom: 40px;
+      text-decoration: none;
+    }
+  }
+}
 
 .chat-main {
   width: calc(100vw - 300px);
   float: left;
-  &__grups {
+  &__groups {
     height: 100px;
     background-color: #ffffff;
     padding: 0 40px;
     overflow: scroll;
-  }
-  &__grups__edit {
+  &__edit {
     display: flex;
     justify-content: space-between;
-
-
   }
-  &__grups__edit-space {
+  &__edit-space {
     margin-top: 35px;
     color: #333333;
     font-size: 20px;
     margin-bottom: 15px;
-  
   }
-  &__grups__edit-box {
+  &__edit-box {
     padding: 0 20px;
     border: solid 1px #66ffff;
     margin-top: 28px;
@@ -94,43 +76,37 @@
     line-height: 40px;
     text-decoration: none;
   }
-  &__grups__menber {
+  &__menber {
     display: flex;
     color: #999999;
     font-size: 12px;
   }
-
-
-
-  
-  
-
-
+}
   &__messages-list {
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 40px;
     overflow: scroll;
-  }
-  &__messages-list__text {
-    display: flex;
-    margin-top: 35px;
-    margin-bottom: 12px;
-  }
-  &__messages-list__text-name {
-    color: #333333;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  &__messages-list__text-time {
-    color: #999999;
-    font-size: 12px;
-    margin-left: 10px;
-  
-  }
-  &__messages-list__message-coment {
-    color: #434A54;
-    font-size: 14px;
+    &__text {
+      display: flex;
+      margin-top: 35px;
+      margin-bottom: 12px;
+    }
+    &__text-name {
+      color: #333333;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &__text-time {
+      color: #999999;
+      font-size: 12px;
+      margin-left: 10px;
+    
+    }
+    &__message-coment {
+      color: #434A54;
+      font-size: 14px;
+    }
   }
 
 
@@ -140,38 +116,36 @@
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-  }
-  &__messages-forms__box {
-    height: 50px;
-    width: 100%;
-    line-height: 50px;
-    background-color: #fafafa;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    
-  }
-  &__messages-forms__box-message {
-    color: #999999;
-  }
-  &__messages-forms__send {
-    border: solid 1px #66ffff;
-    margin-left: 15px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 30px;
-    background-color: #66ffff
-  }
-  &__messages-forms__send-num {
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  &__messages-forms__box-icon__imege {
-    text-decoration: none;
-    font-size: 1.3rem;
-    input{
-      display: none;
+    &__box {
+      height: 50px;
+      width: 100%;
+      line-height: 50px;
+      background-color: #fafafa;
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &___box-message {
+      color: #999999;
+    }
+    &__send {
+      border: solid 1px #66ffff;
+      margin-left: 15px;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 30px;
+      background-color: #66ffff
+    }
+    &__send-num {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    &__box-icon__imege {
+      text-decoration: none;
+      font-size: 1.3rem;
+      input{
+        display: none;
+      }
     }
   }
 }
