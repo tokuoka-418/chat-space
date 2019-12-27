@@ -1,0 +1,42 @@
+.chat-main
+  .chat-main__groups
+    .chat-main__groups__edit
+      %p.chat-main__groups__edit-space
+        エンジニア motoki
+      = link_to '#', class:"chat-main__groups__edit-box" do
+        Edit
+
+
+    .chat-main__groups__menber
+      %p.chat-main__groups__menber-user
+      Menber :
+      %p.chat-main__groups__menber-name
+      kazuhiro 
+  .chat-main__messages-list
+    .chat-main__messages-list__text
+      %p.chat-main__messages-list__text-name
+        tokuoka
+      %p.chat-main__messages-list__text-time
+        2019/12/20 (sun)
+    .chat-main__messages-list__message
+    %p.chat-main__messages-list__message-coment
+      こんにちは
+    .chat-main__messages-list__text
+      %p.chat-main__messages-list__text-name
+        tokuoka
+      %p.chat-main__messages-list__text-time
+        2019/12/20 (sun)
+    .chat-main__messages-list__message
+    %p.chat-main__messages-list__message-coment
+      こんばんは
+  .chat-main__messages-forms
+    %div.chat-main__messages-forms__box
+      %p.chat-main__messages-forms__box-message
+        tyep a message
+      .chat-main__messages-forms__box-icon
+        %label{class: "chat-main__messages-forms__box-icon__imege"}
+          = icon('fas', 'image')
+          %input{type: "file"}
+    .chat-main__messages-forms__send
+      = link_to '#', class:"chat-main__messages-forms__send-num" do
+        Send

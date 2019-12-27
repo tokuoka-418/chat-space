@@ -1,0 +1,20 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__box
+      %p.side-bar__box__box-name
+        tokuoka motoki      
+      %ul.side-bar__menu
+        %li.side-bar__menu__icon
+        = link_to "#", class:"side-bar__menu__icon" do
+          = icon('fas', 'cog')
+        %li.side-bar__menu__icon-name
+        = link_to "#", class:"side-bar__menu__icon-name" do
+          = icon('fas', 'edit')
+
+  .side-bar__group
+    .side-bar__groups__list
+      %p.side-bar__group__list__name
+        エンジニア
+      %p.side-bar__group__list__name-massage
+        まだメッセージはありません
+ 
