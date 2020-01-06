@@ -19,14 +19,12 @@
   &__menu {
     display: flex;
     letter-spacing: 5px;
-    &__icon {
-      color: #ffffff;
-      text-decoration: none;
-  }
-    &__icon-name{
-      color: #ffffff;
-      text-decoration: none;
-  }
+    li {
+      a {
+        color: #ffffff;
+      }
+    }
+ 
 }
   &__group {
     width: 300px;
