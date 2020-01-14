@@ -3,7 +3,7 @@
     .chat-main__groups__edit
       %p.chat-main__groups__edit-space
         エンジニア motoki
-      = link_to '#', class:"chat-main__groups__edit-box" do
+      = link_to index_message_path(current_user) do class:"chat-main__groups__edit-box"
         Edit
 
 
