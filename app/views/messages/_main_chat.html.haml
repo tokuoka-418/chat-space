@@ -1,42 +1,29 @@
 .chat-main
   .chat-main__groups
-    .chat-main__groups__edit
-      %p.chat-main__groups__edit-space
-        エンジニア motoki
-      = link_to index_message_path(current_user) do class:"chat-main__groups__edit-box"
-        Edit
+    .chat-main__groups__box
+      .chat-main__groups__box__left
+        .chat-main__groups__box__left__groupname
+          エンジニア motoki
+        .chat-main__groups__box__left__membername
+          %p.chat-main__groups__menber-user
+            Menber :
+          %p.chat-main__groups__menber-name
+            kazuhiro 
+    .chat-main__groups__box
+      .chat-main__groups__box__editbtn
+        = link_to '#', class: 'Edit' do
+          Edit
 
 
-    .chat-main__groups__menber
-      %p.chat-main__groups__menber-user
-      Menber :
-      %p.chat-main__groups__menber-name
-      kazuhiro 
+
   .chat-main__messages-list
-    .chat-main__messages-list__text
-      %p.chat-main__messages-list__text-name
-        tokuoka
-      %p.chat-main__messages-list__text-time
-        2019/12/20 (sun)
-    .chat-main__messages-list__message
-    %p.chat-main__messages-list__message-coment
-      こんにちは
-    .chat-main__messages-list__text
-      %p.chat-main__messages-list__text-name
-        tokuoka
-      %p.chat-main__messages-list__text-time
-        2019/12/20 (sun)
-    .chat-main__messages-list__message
-    %p.chat-main__messages-list__message-coment
-      こんばんは
-  .chat-main__messages-forms
-    %div.chat-main__messages-forms__box
-      %p.chat-main__messages-forms__box-message
-        tyep a message
-      .chat-main__messages-forms__box-icon
-        %label{class: "chat-main__messages-forms__box-icon__imege"}
-          = icon('fas', 'image')
-          %input{type: "file"}
-    .chat-main__messages-forms__send
-      = link_to '#', class:"chat-main__messages-forms__send-num" do
-        Send
+    = render @messages
+
+  .chat-main__forms
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'chat-main__forms__message', placeholder: 'type a message'
+      .forms__mask
+        = f.label :image, class: 'forms__mask__imege' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'forms__submit'
