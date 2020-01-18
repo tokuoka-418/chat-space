@@ -3,15 +3,19 @@
     .chat-main__groups__box
       .chat-main__groups__box__left
         .chat-main__groups__box__left__groupname
-          エンジニア motoki
+          - current_user.groups.each do |group|
+            = group.name
         .chat-main__groups__box__left__membername
           %p.chat-main__groups__menber-user
             Menber :
+            %ul
+              - @group.users.each do |user|
+                %li= user.name
           %p.chat-main__groups__menber-name
-            kazuhiro 
+          
     .chat-main__groups__box
       .chat-main__groups__box__editbtn
-        = link_to '#', class: 'Edit' do
+        = link_to edit_group_path(current_user), class: 'Edit' do
           Edit
 
 
