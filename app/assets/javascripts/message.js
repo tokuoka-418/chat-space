@@ -2,7 +2,7 @@ $(function(){
       function buildHTML(message){
         if ( message.image ) {
           var html =
-          `<div class="message">
+          `<div class="messages__message">
                 <div class="message__text">
                   <div class="message__text__name">
                     ${message.user_name}
@@ -11,8 +11,8 @@ $(function(){
                     ${message.created_at}
                   </div>
                </div>
-               <div class="message__content>
-                 <p class="message__content__image">
+               <div class="message__content">
+                 <p class="message__content__text">
                    ${message.content}
                  </p>
                </div>
@@ -21,7 +21,7 @@ $(function(){
           return html;
         } else {
           var html =
-          `<div class="message">
+          `<div class="messages__message">
                 <div class="message__text">
                     <div class="message__text__name">
                       ${message.user_name}
@@ -30,8 +30,8 @@ $(function(){
                       ${message.created_at}
                     </div>
                 </div>
-                <div class="message__conten>
-                  <p class="message__conten__image">
+                <div class="message__content">
+                  <p class="message__content__text">
                     ${message.content}
                   </p>
                 </div>
@@ -53,10 +53,8 @@ $(function(){
     })
     .done(function(data){
       var html = buildHTML(data);
-      $('.messages').append(html)
-      $('#massage_conten').val('')
+      $('.chat-main__messages').append(html);      
       $('form')[0].reset();
     })
-
   });
 });

@@ -47,6 +47,7 @@
     background-color: #fafafa;
     padding: 46px 40px;
     overflow: scroll;
+    
     .message {
       padding-bottom: 40px;
       &__text {
@@ -64,7 +65,7 @@
           margin-left: 10px;
       }
     }
-      &__content {
+      &__content__text {
         color: #434A54;
         font-size: 14px;
       }
