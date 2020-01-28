@@ -63,9 +63,6 @@ $(function(){
     return false;
   });
   let reloadMessages = function () {
-    if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-      setInterval(reloadMessages, 7000);
-    }
     last_message_id = $('.message:last').data("message-id");
     $.ajax({
       url: "api/messages",
@@ -79,13 +76,14 @@ $(function(){
         });
           $('.messages').append(insertHTML);
           $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-          $("#new_message")[0].reset();
-          $(".form__submit").prop("disabled", false);
         }
       })
       .fail(function() {
         alert("通信エラーです。");
       })
     })
+  }
+  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+    setInterval(reloadMessages, 7000);
   }
 });
