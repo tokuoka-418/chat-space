@@ -68,6 +68,7 @@ $(function(){
       url: "api/messages",
       type: 'get',
       data: {id: last_message_id}
+    })
       .done(function(messages) {
         if (messages.length !== 0) {
           var insertHTML = '';
@@ -81,7 +82,7 @@ $(function(){
       .fail(function() {
         alert("通信エラーです。");
       })
-    })
+    
   }
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
     setInterval(reloadMessages, 7000);
