@@ -3,8 +3,7 @@
     .chat-main__groups__box
       .chat-main__groups__box__left
         .chat-main__groups__box__left__groupname
-          - current_user.groups.each do |group|
-            = group.name
+          = @group.name
         .chat-main__groups__box__left__membername
           %p.chat-main__groups__menber-user
             Menber :
@@ -31,3 +30,4 @@
           = icon('fas', 'image', class: 'icon')
           = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'forms__submit'
+      
