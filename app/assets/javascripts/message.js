@@ -63,7 +63,7 @@ $(function(){
     return false;
   });
   let reloadMessages = function () {
-    last_message_id = $('.messages__message:last').data("message-id");
+     last_message_id = $('messages__message:last').data("message-id");
     $.ajax({
       url: "api/messages",
       type: 'get',
@@ -84,7 +84,7 @@ $(function(){
       })
     
   }
-  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+  if (document.location.href.match(/\/groups\/\d+\/chat-main__messages/)) {
     setInterval(reloadMessages, 7000);
   }
 });
